@@ -2,22 +2,22 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-class Loading extends React.Component {
+class ComingSoon extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      text: "Loading",
+      text: "COMING SOON",
     };
   }
   componentDidMount() {
-    const stopper = this.state.text + "...";
+    const stopper = this.state.text + "!!!";
 
     this.interval = window.setInterval(() => {
       this.state.text === stopper
-        ? this.setState(() => ({ text: "Loading" }))
-        : this.setState((prevState) => ({ text: prevState.text + "." }));
-    }, 300);
+        ? this.setState(() => ({ text: "COMING SOON" }))
+        : this.setState((prevState) => ({ text: prevState.text + "!" }));
+    }, 400);
   }
   componentWillUnmount() {
     window.clearInterval(this.interval);
@@ -33,7 +33,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <Loading />
+          <ComingSoon />
         </p>
         <a
           className="App-link"
@@ -41,7 +41,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          sayvibes
+          Teach me piano
         </a>
       </header>
     </div>
