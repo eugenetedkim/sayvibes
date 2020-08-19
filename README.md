@@ -1,1 +1,1 @@
-<a href="http://www.sayvibes.com/">http://www.sayvibes.com/</a>
+<a href="http://www.sayvibes.com/" target="_blank">http://www.sayvibes.com/</a>
