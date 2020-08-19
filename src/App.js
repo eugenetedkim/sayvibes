@@ -1,51 +1,31 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-
-class ComingSoon extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      text: "COMING SOON",
-    };
-  }
-  componentDidMount() {
-    const stopper = this.state.text + "!!!";
-
-    this.interval = window.setInterval(() => {
-      this.state.text === stopper
-        ? this.setState(() => ({ text: "COMING SOON" }))
-        : this.setState((prevState) => ({ text: prevState.text + "!" }));
-    }, 400);
-  }
-  componentWillUnmount() {
-    window.clearInterval(this.interval);
-  }
-  render() {
-    return <p>{this.state.text}</p>;
-  }
-}
+import Nav from "./Nav";
+import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <ComingSoon />
-        </p>
-        <a
-          className="App-link"
-          href="https://www.youtube.com/channel/UChV9LIbhVgQoROuFZK_wmPQ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Teach me piano
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/Contact" component={Contact} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
+
+const Home = () => (
+  <div>
+    <h1>Home</h1>
+  </div>
+);
 
 export default App;
