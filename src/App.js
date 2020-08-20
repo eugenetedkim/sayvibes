@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Nav from "./Nav";
 import About from "./About";
-import Projects from "./Projects";
+import Vibes from "./Vibes";
 import Contact from "./Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
+          <Route path="/vibes" component={Vibes} />
           <Route path="/Contact" component={Contact} />
         </Switch>
       </div>

@@ -18,8 +18,8 @@ function Nav() {
         <Link to="/about" style={navStyle}>
           <li>About</li>
         </Link>
-        <Link to="projects" style={navStyle}>
-          <li>Projects</li>
+        <Link to="vibes" style={navStyle}>
+          <li>Vibes</li>
         </Link>
         <Link to="contact" style={navStyle}>
           <li>Contact</li>

@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-function Projects() {
+function Vibes() {
   return (
     <div>
-      <h1>Projects</h1>
+      <h1>Vibes</h1>
     </div>
   );
 }
 
-export default Projects;
+export default Vibes;
