@@ -11,7 +11,9 @@ function Nav() {
 
   return (
     <nav>
-      <img src={logo} alt="sayvibes" />
+      <Link to="/">
+        <img src={logo} alt="sayvibes" />
+      </Link>
       <ul className="nav-links">
         <Link to="/about" style={navStyle}>
           <li>About</li>
