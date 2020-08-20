@@ -9,7 +9,13 @@ function Nav() {
 
   return (
     <nav>
-      <h3>Logo</h3>
+      <img
+        src="../public/logo.jpg"
+        alt="sayvibes"
+        width="42"
+        height="42"
+        style="vertical-align:bottom"
+      ></img>
       <ul className="nav-links">
         <Link to="/about" style={navStyle}>
           <li>About</li>
