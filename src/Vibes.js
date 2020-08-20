@@ -7,6 +7,7 @@ function Vibes() {
       <h1>Vibes</h1>
       <div>
         <iframe
+          title="danceMonkey"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/Yfv0jvvXmQg"
