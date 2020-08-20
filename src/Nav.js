@@ -5,7 +5,7 @@ import logo from "./logo.jpg";
 
 function Nav() {
   const navStyle = {
-    color: "violet",
+    color: "rgb(209, 166, 245)",
     textDecoration: "none",
   };
 
