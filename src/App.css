@@ -22,3 +22,15 @@ nav {
   align-items: center;
   width: 50%;
 }
+
+.vibes {
+  border: 3px #833471;
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #ffcccc;
+}
